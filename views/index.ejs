@@ -1,0 +1,35 @@
+<%-include ('./partials/header.ejs')%>
+<body >
+    <%-include ('./partials/navbar.ejs')%>
+    <div class="container">
+        <!-- <hr>
+        <h1>PERGUNTAS</h1>
+        <hr>
+        <a href="/perguntar" class="btn btn-primary">Fazer Pergunta</a>
+         -->
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4">ASK<b class="display-4 titulo">{</b>T.I<b class="display-4 titulo">}</b></h1>  
+            <p class="lead">Um simples  site de perguntas para solucionar duvidas sobre T.I</p>
+            <hr class="my-4">
+            <p>Tem alguma duvida? manda pra gente!</p>
+            <a href="/perguntar" class="btn btn-primary btn-lg" role="button">Fazer Pergunta</a>
+        </div>
+        <br>
+
+
+        <% perguntas.forEach((pergunta)=>{%>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <h4> <%= pergunta.titulo%> </h4>  
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="/pergunta/<%= pergunta.id%>">Responder</a>
+                </div>
+            </div>
+              
+        <% }) %>
+    </div>
+</body>
+<%-include ('./partials/footer.ejs')%>

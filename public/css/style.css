@@ -1,0 +1,18 @@
+body{
+    background-color: #eceff1;
+}
+.logo{
+    height: 30px ;
+    width: 30px;
+    margin: 0px 20px;
+}
+
+#formulario-pergunta{
+    margin-top: 5vh;
+}
+.titulo{
+    color: #E8BB00;
+}
+/* p{
+    margin-bottom: 0;
+} */
